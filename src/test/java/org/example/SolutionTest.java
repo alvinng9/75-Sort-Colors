@@ -15,6 +15,9 @@ public class SolutionTest {
         int[] inputTwo = new int[]{2,0,1};
         solution.sortColors(inputTwo);
         assertArrayEquals(new int[]{0,1,2}, inputTwo);
+        int[] inputThree = new int[]{2,2,2,2,2,2,0,0,1,1,0,0};
+        solution.sortColors(inputThree);
+        assertArrayEquals(new int[]{0,0,0,0,1,1,2,2,2,2,2,2}, inputThree);
     }
 
 }
